@@ -1,0 +1,71 @@
+import React from 'react';
+import {
+  Utensils,
+  ShoppingCart,
+  Home,
+  Zap,
+  Car,
+  Film,
+  Activity,
+  ShoppingBag,
+  BookOpen,
+  Plane,
+  Smile,
+  TrendingUp,
+  MoreHorizontal,
+  Briefcase,
+  Laptop,
+  PieChart,
+  DollarSign,
+  Key,
+  Gift,
+  PlusCircle,
+  Tag,
+  Coffee,
+  Heart,
+  Shield,
+  CreditCard,
+  Tv,
+  Music,
+  Award,
+  Smartphone,
+  Globe
+} from 'lucide-react';
+
+export const ICONS_MAP = {
+  utensils: Utensils,
+  'shopping-cart': ShoppingCart,
+  home: Home,
+  zap: Zap,
+  car: Car,
+  film: Film,
+  activity: Activity,
+  'shopping-bag': ShoppingBag,
+  'book-open': BookOpen,
+  plane: Plane,
+  smile: Smile,
+  'trending-up': TrendingUp,
+  'more-horizontal': MoreHorizontal,
+  briefcase: Briefcase,
+  laptop: Laptop,
+  'pie-chart': PieChart,
+  'dollar-sign': DollarSign,
+  key: Key,
+  gift: Gift,
+  'plus-circle': PlusCircle,
+  tag: Tag,
+  coffee: Coffee,
+  heart: Heart,
+  shield: Shield,
+  'credit-card': CreditCard,
+  tv: Tv,
+  music: Music,
+  award: Award,
+  smartphone: Smartphone,
+  globe: Globe
+};
+
+export const CategoryIcon = ({ name, size = 18, color = 'currentColor', className = '' }) => {
+  const IconComponent = ICONS_MAP[name] || Tag;
+  return <IconComponent size={size} color={color} className={className} />;
+};
